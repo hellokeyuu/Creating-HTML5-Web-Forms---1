@@ -1,0 +1,121 @@
+/* Author: Keyu Du
+	Id: 15398574
+	Date:10-24-2017 */
+	
+@charset "UTF-8";
+ footer, hgroup, header, section, nav {
+   display: block;
+}
+
+
+/* Set the default page element styles */
+
+body * {
+   font-family: Verdana, Geneva, sans-serif;
+   font-size: 100%;
+   font-weight: inherit;
+   line-height: 1.2em;
+   list-style: none;
+   margin: 0px;
+   padding: 0px;
+   text-decoration: none;
+   vertical-align: baseline;
+}
+
+
+
+/* Body Styles */
+body {
+   width: 95%;
+   min-width: 900px;
+   max-width: 1000px;
+   font-family: Verdana, Geneva, sans-serif;
+   font-weight: normal;
+   font-size: 16px;
+   margin: 0px auto;
+   position: relative;
+   
+}
+
+/* Header styles */
+
+header {
+  
+   width: 100%;
+
+  
+}
+
+header img {
+   display: block;
+
+   width: 100%;
+}
+
+
+/*Navigation list styles */
+
+header nav {
+   float: left;
+   width: 100%;
+   margin: 0px auto 0px -0.5%;
+}
+
+header nav li {
+   display: block;
+   
+   margin-left: 0.5%;
+   margin-bottom: 3px;
+   float: left;
+}
+
+header nav li a {
+   display: block;
+   width: 95px;
+   height: 30px;
+   line-height: 25px;
+   text-align: center;
+   color: black;
+   font-size: 0.8em;
+   border-top: 3px solid gray;
+   border-left: 3px solid gray;
+   border-bottom:3px solid black;
+   border-right:3px solid black;
+   background-color: rgb(230, 243, 239);
+}
+
+header nav li a:hover {
+   background-color: rgb(235, 152, 66);
+}
+
+/* Section styles */
+
+section {
+   clear: left;
+   width: 100%;
+}
+
+section p {
+   font-size:1.3em;
+   color: black;
+   margin-left: 20px;
+   padding-top: 10px;
+   height:35px;
+}
+
+/* Footer Styles */
+
+footer {
+   border-top: 1px solid blue;
+   background-color: rgb(230, 243, 239);
+   clear: left;
+   margin-top: 20px;
+   padding: 10px 0px;
+}
+
+footer address {
+   color: blue;
+   font-style: normal;
+   font-size: 0.8em;
+   text-align: center;
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<!--
+	     
+	      Tutorial 7: Millennium Computers
+	      Author: Keyu Du
+	      ID  :15398574
+	      Date:   25/10/2017
+	
+	      Filename:         pc.html
+	      Supporting files: formsubmit.js, go.png, mclogo.jpg, 
+	      					modernizr-1.5.js, stop.png
+	
+	   -->
+		  <meta charset="UTF-8" />
+	      <script src="modernizr-1.5.js"></script>
+	      <script src="formsubmit.js"></script>
+	      <title>Millennium Computers</title>
+	      <link href="mill.css" rel="stylesheet" />
+	      <link href="oform.css" rel="stylesheet" />
+	
+	</head>
+	<body>
+		<header>
+         <img src="mclogo.jpg" alt="Millennium Computers" />
+         <nav>
+            <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">Desktops</a></li>
+               <li><a href="#">Laptops</a></li>
+               <li><a href="#">Peripherals</a></li>
+               <li><a href="#">Support</a></li>
+               <li><a href="#">Your Account</a></li>
+               <li><a href="#">Shopping Cart</a></li>
+               <li><a href="#">Contact Us</a></li>
+            </ul>
+         </nav>      
+      </header>
+      
+      <section>
+      <p>Build Your Computer</p>
+     
+      <p>* - required information</p>
+      
+      <form id="cOrder" name="cOrder"
+            action="http://www.mill_computers.com/orders/process.cgi"
+            method="post">
+      
+       <fieldset id="contInfo">
+            <legend>Contact Information</legend>
+
+            <label for="fName">First Name *</label>
+            <input name="fName" id="fName"
+                 
+                   required="required" />
+              
+            <label for="lName">Last Name *</label>
+            <input name="lName" id="lName"
+                   required="required" />
+
+            <label for="street">Street *</label>
+            <input name="street" id="street" 
+            		   required="required"/>
+
+            <label for="city">City *</label>
+            <input name="city" id="city" required="required" />
+
+            <label for="county">State *</label>
+            <input name="county" id="county" required="required" />
+
+            <label for="pcode">ZIP *</label>
+            <input name="pcode" id="pcode"
+            		   placeholder="nnnnn (-nnnn)"
+                   pattern="^\d{5}(\-\d{4})?$" 
+                   required="required" />
+
+            <label for="phone">Phone *</label>
+            <input name="phone" id="phone"
+                   type="tel"
+                   placeholder="(nnn) nnn-nnnn"
+                   pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" 
+                   required="required"/>
+
+         </fieldset>
+         
+         <fieldset id="CompConfig">
+            <legend>Computer Configuration</legend>
+
+           <label for="pSpeed">Processor Speed</label>
+            <select name="pSpeed" id="pSpeed">
+               <option value="type1">5.2 GHz</option>
+               <option value="type2">4 GHz</option>
+               <option value="type3" selected="selected">3.2 GHz</option>
+               
+            </select>
+            
+            <label for="mem">Memmory</label>
+            <select name="mem" id="mem">
+               <option value="type1"selected="selected">1GB</option>
+               <option value="type2">2GB</option>
+               <option value="type3">4GB</option>
+               <option value="type4">8GB</option>
+            </select>
+            
+            <label for="monitor">Monitor Size</label>
+            <select name="monitor" id="monitor">
+               <option value="type1"selected="selected">15inches</option>
+               <option value="type2">17inches</option>
+               <option value="type3">19inches</option>
+               <option value="type4">21inches</option>
+            </select>
+            
+
+            <label for="hd">Hard Drive</label>
+            <select name="hd" id="hd">
+               <option value="type1"selected="selected">240 GB</option>
+               <option value="type2">500 GB</option>
+               <option value="type3">750 GB</option>
+               <option value="type4">1 TB</option>
+            </select>
+
+            <label>DVD Burner</label>
+            <fieldset class="optionGroup">
+               <label for= "dYes">Yes</label>
+               <input type="radio" name="dvd" id="dYes"
+                      value="yes" />
+
+               <label for= "dNo">No</label>
+               <input type="radio" name="dvd" id="dNo"
+                      value="no" />
+            </fieldset>
+
+            <label>LAN Card</label>
+            <fieldset class="optionGroup">
+               <label for="tYes">Yes</label>
+               <input type="radio" name="tuner" id="tYes"
+                      value="yes" />
+
+               <label  for="tNo">No</label>
+               <input type="radio" name="tuner" id="tNo"
+                      value="no" />
+            </fieldset>
+            <label>Media Card Reader</label>
+            <fieldset class="optionGroup">
+               <label for="mYes">Yes</label>
+               <input type="radio" name="mCard" id="mYes"
+                      value="yes" />
+ 
+               <label for="mNo">No</label>
+               <input type="radio" name="mCard" id="mNo"
+                      value="no" />
+            </fieldset>
+
+         </fieldset>
+         
+         <label id="warranty">
+            <input type="checkbox" name="warranty" />
+            Yes, I want the 24-month extended warranty.
+         </label>
+         
+         <label for= "comments ">Any special requests on your order?</label>
+            <textarea name="comments" id="comments"></textarea>
+            
+          <p>
+            <input type="submit" value="Send Order" />
+            <input type="reset" value="Cancel Order" />
+            <input type="button" value="Contact Me" />
+            
+         </p>
+      
+      </form>
+      </section>
+	  <footer>
+	      <address>
+	         Millennium Computers &bull;
+	         20 Shelffield Street &bull;
+	         Terrace End,Palmerston North,NZ &bull;
+	         (06)555-8441 
+	      </address>
+      </footer>
+	
+	</body>
+</html>

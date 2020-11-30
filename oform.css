@@ -1,0 +1,160 @@
+/* Author: Keyu Du
+	Id: 15398574
+	Date:10-24-2017 */
+	
+@charset "UTF-8";
+fieldset{
+   background-color: white;
+   border: 1px solid black;
+   float: left;
+   width: 46%;
+}
+fieldset#CompConfig {
+	float:left;
+	margin-left:10px;
+	height:263px;
+}
+
+legend#CompConfig {
+   color: black;
+   width: 150px;
+   text-indent:15px;
+}
+legend#ContInfo {
+   color: black;
+   width: 180px;
+}
+
+/* Label styles */
+
+label {
+   clear: left;
+   display: block;
+   float: left;
+   font-size: 0.9em;
+   margin: 7px 4% 7px 5px;
+   width: 40%;
+}
+
+/* Input control styles */
+
+input {
+   display: block;
+   float: left;
+   font-size: 0.9em;
+   margin: 7px 0px;
+   width: 50%;
+}
+
+input#state {
+   width: 50px;
+}
+
+/* Selection list styles */
+
+select {
+   display: block;
+   float: left;
+   font-size: 0.9em;
+   margin: 7px 0px;
+}
+
+/* Option button styles */
+
+fieldset.optionGroup {
+   border-width: 0px;
+}
+
+fieldset.optionGroup label {
+   display: inline;
+   float: none;
+   margin: 0px 3px 0px 0px;
+   width: 30px;
+}
+
+fieldset.optionGroup input {
+   display: inline;
+   float: none;
+   margin: 0px 20px 0px 0px;
+   width: 20px;
+}
+
+/* Text area styles */
+
+textarea {
+   display: block;
+   font-size: 0.9em;
+   float: left;
+   clear:left;
+   height: 150px;
+   margin: 10px 0px;
+   width: 50%;
+}
+
+/* Check box styles */
+
+#warranty {
+   color: black;
+   float: left;
+   text-align: left;
+   width: 90%;
+}
+
+#warranty input {
+   display: inline;
+   float: left;
+   width: 20px;
+}
+
+
+
+/* Button styles */
+
+form p {
+   text-align: center;
+}
+
+input[type="submit"] {
+   display: inline;
+   float: left;
+   clear:left;
+   margin-left:0px;
+   height: 40px;
+   width: 200px;
+}
+input[type="reset"] {
+   display: inline;
+   float: left;
+   height: 40px;
+   width: 200px;
+   margin-left:20px;
+}
+input[type="button"] {
+   display: inline;
+   float: left;
+   height: 40px;
+   width: 200px;
+   margin-left:20px;
+}
+/* Validation styles */
+
+input:focus, select:focus, textarea:focus {
+   background-color: rgb(220, 255, 220);
+}
+
+input:focus:valid {
+   background: rgb(220, 255, 220) url(go.png) bottom right no-repeat;
+
+   -o-background-size: contain;
+   -moz-background-size: contain;
+   -webkit-background-size: contain;
+   background-size: contain;
+}
+
+input:focus:invalid {
+   background: rgb(255, 232, 233) url(stop.png) bottom right no-repeat;
+
+   -o-background-size: contain;
+   -moz-background-size: contain;
+   -webkit-background-size: contain;
+   background-size: contain;
