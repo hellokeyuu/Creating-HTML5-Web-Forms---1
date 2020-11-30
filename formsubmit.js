@@ -1,8 +1,5 @@
 /*
    New Perspectives on HTML and CSS
-   Tutorial 6
-   Case 4
-
 
 
    Filename: formsubmit.js
